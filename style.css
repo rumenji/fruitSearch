@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  background-color: yellow;
+}
+
+body {
+  font: 16px Arial;
+  background: linear-gradient(to right, orange, red);
+  
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: orange;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 1000%);
+}
+
+.search-container input,
+.search-container .suggestions {
+  background-color: orange;
+  
+  
+}
+.search-container input {
+  
+}
+.search-container .suggestions {
+  position: absolute;
+  border: 1px solid orange;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.has-suggestions {
+  border: 1px
+}
+ul li {
+  /* TODO */
+}
+ul li:hover {
+  background-color: red;
+}
